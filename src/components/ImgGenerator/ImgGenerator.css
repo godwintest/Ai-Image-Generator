@@ -107,3 +107,12 @@
 .display-none{
     display: none;
 }
+
+.footer p a{
+    color: rgb(240, 144, 112);
+    font-weight: bold;
+}
+
+.footer p a:hover{
+    color: cornflowerblue;
+}

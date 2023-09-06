@@ -14,6 +14,7 @@ const ImgGenerator = () => {
             
         }
         setLoading(true);
+        const MY_KEY = process.env.REACT_APP_OPENAI_API_KEY;
         const response = await fetch(
             "https://api.openai.com/v1/images/generations",
             {
@@ -21,7 +22,7 @@ const ImgGenerator = () => {
                 headers:{
                     "Content-Type": "application/json",
                     Authorization:
-                "Bearer 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",
+                `Bearer ${MY_KEY}`,
                 "User-Agent":"Chrome",
                            },
                            body:JSON.stringify({
